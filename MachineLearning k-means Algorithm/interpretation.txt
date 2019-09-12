@@ -1,0 +1,140 @@
+# ========= Data Science, Algorithm and Advanced Software Engineering ======
+# ========= Johnson Temilola - [2019/08/10] ==================
+
+# =========== PROGRAM DESCRIPTION - INTERPRETATION ===========
+
+'''
+  Run k-means using 3 clusters on the 1953 and 2008 datasets separately. What do you see? 
+  Take note of how the clusters change from 1953 to 2008. You will need to pay attention not only to which countries are in clusters together but also to the Life Expectancy and BirthRates for those clusters.
+ 
+  Next, run the algorithm with 4 clusters on dataBoth.csv. 
+  Note any observations in your text file.
+ 
+    - Which countries are moving up clusters? 
+    - How does (2008)South Africa” compare to “(1953)United States”?     
+    - Are there any 2008 countries that are in a cluster that is made up mostly of 1953 countries? Try and explain why. 
+    - Are there any 1953 countries that are in a cluster that is made up of mostly 2008 countries? Try and explain why.
+
+'''
+
+
+1) Running the k-means using 3 clusters on the 1953 and 2008 datasets 
+
+ => There are 3 clusters each in 1953 and 2008 data 
+Cluster 
+    - Low Birth Rate and High Life expectancy
+Cluster 
+
+    - Average Birth rate and average Life Expectancy
+Cluster 
+
+    - High Birth Rate and Low Life expectancy.
+ 
+For all clusters, Birth rate has reduced and Life expectancy increased in 2008 data as compared to 1953 data. This can be mainly attributed to rise in literacy rate and advancements made in healthcare.
+   
+A lot of African countries and other third world countries have moved from have moved from cluster 3 in 1953 upwards to cluster 1 and cluster 2 in 2008. 
+   A few countries have slipped downward from cluster 2 to cluster 1 but those are mainly countires lying on the boundaries of two clusters.
+
+
+
+
+2) run the algorithm with 4 clusters on dataBoth.csv. 
+
+=> make 4 clusters:
+
+Cluster a: Low Birth Rate and High Life expectancy
+
+
+Cluster b: Average Birth rate and More than average Life Expectancy
+
+
+Cluster c: More than average Birth Rate and average Life expectancy
+ 
+
+Cluster d: High Birth Rate and Low Life expectancy
+
+
+Counts of 2008 countries in above clusters
+
+cluster	  Countries
+
+a	    92
+
+b	    59
+
+c	    40
+
+d	    5
+
+
+
+Counts of 1953 countries in above clusters
+
+cluster	  Countries
+
+a	    4
+
+b	    42
+
+c	    58
+
+d	    92
+
+
+Countries are moving up the clusters towards low birth rate and high life expectancy
+
+2.1  Which countries are moving up clusters:- 
+    => Almost all (187) countries have moved up the clusters
+
+
+
+2.2 How does (2008)South Africa compare to (1953)United States? 
+  => Both are in the same cluster
+
+2.3 Are there any 2008 countries that are in a cluster that is made up mostly of 1953 countries
+
+=> Cluster d is mostly made up 1953 countries. The 2008 countries in this cluster are:
+	
+
+Countries	    cluster_1953	    cluster_2008
+
+Afghanistan	       d	            d
+
+Chad	               d	            d
+
+Congo Dem. Rep.	       d	            d
+
+Niger	               d	            d
+
+Zambia	               d	            d
+
+=> These are third world countries which have not seen any development in past half-century and have faced lot of turmoils which is why they have high birth rate due to low literacy rates and low Life expectancy because of war and diseases.
+
+
+
+2.4 Are there any 1953 countries that are in a cluster that is made up of mostly 2008 countries
+
+=> Cluster a is mostly made up 1953 countries. The 1953 countries in this cluster are:
+	
+
+Countries	    cluster_1953	    cluster_2008
+
+Channel Islands	          a	            a
+
+Norway	                  a	            a
+
+Sweden	                  a	            a
+
+United Kingdom	          a	            a
+
+
+=> These are countries with either low population or developed 1st world countries. They have lot of resources at their disposal and have seen a lot of development in past half-century. Hence they have maintained their low birth rate and high life expectancy.
+
+
+
+
+
+
+
+
+
